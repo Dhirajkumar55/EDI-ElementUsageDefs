@@ -44,9 +44,8 @@ export async function getElementUsageDefsWithCode(req, res) {
 }
 
 async function getCodeWithElement(obj,res){
-    console.log("yes");
+    
 	if(numberOfElementsRetrieved<numberOfElements){
-
 		obj.data[numberOfElementsRetrieved]['Code']="";
 		const params=obj.data[numberOfElementsRetrieved];
 		const query={
