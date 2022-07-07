@@ -13,7 +13,7 @@ export async function getCode(req, res) {
 
     try {
         const data = await Code.find(query).select({ ElementID: 1, Value: 1, Description: 1, _id: 0 });
-        console.log(data);
+        
         if (data.length > 0) {
             response = generateResponse(true, "found successfully", data);
         }
